@@ -72,20 +72,61 @@ body {
 
     body {
         padding: 10px;
+        width: 100%;
+    }
+
+    .conteudo-input {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        align-items: stretch;
     }
 
     .campo {
-        min-width: 115px;
+        flex: 0 0 125px;
+        width: 125px;
+        min-width: 125px;
+    }
+
+    .campo p {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+        padding: 5px;
+        box-sizing: border-box;
     }
 
     .campo input,
     .campo div {
-        height: 32px;
-        font-size: 13px;
+        width: 100%;
+        height: 38px;
+        min-height: 38px;
+        box-sizing: border-box;
+        margin: 0;
+        font-size: 14px;
     }
 
     .rendimento {
-        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .rendimento p {
+        width: auto;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .rendimento input {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
 }
 
